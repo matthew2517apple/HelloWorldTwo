@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var HelloLabel: UILabel!
     
     @IBAction func ShowMessage(_ sender: Any) {
+        HelloLabel.text = "Hello iOS Programmer!"
     }
 }
 
