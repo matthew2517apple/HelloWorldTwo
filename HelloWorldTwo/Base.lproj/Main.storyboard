@@ -24,23 +24,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGI-oT-zJ6">
-                                <rect key="frame" x="162" y="207" width="59" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGI-oT-zJ6">
+                                <rect key="frame" x="162" y="241" width="59" height="30"/>
                                 <state key="normal" title="Click Me"/>
+                                <connections>
+                                    <action selector="ShowMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="81O-rB-yhG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="IGs-7G-vmJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="MQT-gB-8tH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IGs-7G-vmJ" secondAttribute="trailing" constant="100" id="Pfc-qP-sc8"/>
+                            <constraint firstItem="UGI-oT-zJ6" firstAttribute="top" secondItem="IGs-7G-vmJ" secondAttribute="bottom" constant="100" id="kxs-9F-e5F"/>
                             <constraint firstItem="IGs-7G-vmJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="zhJ-zd-xiJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="HelloLabel" destination="IGs-7G-vmJ" id="LN8-Iz-bqf"/>
-                        <outlet property="ShowMessage" destination="UGI-oT-zJ6" id="b8S-jW-S3z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

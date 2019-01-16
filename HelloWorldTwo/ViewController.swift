@@ -22,6 +22,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var HelloLabel: UILabel!
     
-    @IBOutlet weak var ShowMessage: UIButton!
+    @IBAction func ShowMessage(_ sender: Any) {
+    }
 }
 
